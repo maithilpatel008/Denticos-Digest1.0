@@ -12,9 +12,6 @@ jobs:
      
     steps:
       - uses: actions/checkout@main
-      - uses: actions/setup-node@main
-        with:
-          node-version: '10.x'
       - uses: FirebaseExtended/action-hosting-deploy@main
         with:
           args: deploy --only hosting
