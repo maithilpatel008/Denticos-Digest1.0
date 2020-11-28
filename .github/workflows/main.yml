@@ -13,3 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - run: firebase deploy --token "$FIREBASE_TOKEN"
+
