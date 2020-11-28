@@ -14,9 +14,7 @@ jobs:
       - uses: actions/checkout@main
       - uses: actions/setup-node@main
         with:
-          node-version: '10.x'      
-      - run: npm install
-      - run: npm run build --prod
+          node-version: '10.x'
       - uses: FirebaseExtended/action-hosting-deploy@main
         with:
           args: deploy --only hosting
