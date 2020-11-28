@@ -1,24 +1,23 @@
 name: CI
 
-on:
+on: 
   push:
-    branches: ['Version-1.0']
-  pull_request:
-    branches: ['Version-1.0']
-
+    branches:
+    - main
 jobs:
-  build:
-    name: Build and Deploy
+  ##build:
+  firebase-deploy:
     runs-on: ubuntu-latest
+    ##firebase-deploy:
+     
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Initialize Node
-        uses: actions/setup-node@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Deploy
-        uses: w9jds/firebase-action@'Version-1.0'
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@main
+        with:
+          node-version: '10.x'      
+      - run: npm install
+      - run: npm run build --prod
+      - uses: w9jds/firebase-action@main
         with:
           args: deploy --only hosting
         env:
