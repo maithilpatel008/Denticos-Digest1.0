@@ -12,10 +12,8 @@ jobs:
      
     steps:
       - uses: actions/checkout@main
-      - uses: FirebaseExtended/action-hosting-deploy@main
-        with:          
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
-          expires: 30d
-          projectId: denticos-digest
-          channelId: live
+      - uses: actions/setup-node@main
+        with:
+          node-version: '10.x'      
+      - run: npm install -g firebase-tools
+      - run: firebase deploy --token "$FIREBASE_TOKEN"
