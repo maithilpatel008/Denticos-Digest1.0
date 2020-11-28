@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maithilpatel008/Denticos-Digest/issues"
   },
-  "homepage": "https://github.com/maithilpatel008/Denticos-Digest#readme"
+  "homepage": "https://github.com/maithilpatel008/Denticos-Digest#readme",
+  "dependencies": {
+    "mdbootstrap": "^4.19.1"
+  }
 }
