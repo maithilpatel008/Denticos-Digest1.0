@@ -8,11 +8,29 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Blogs</title>
 
+    <!--CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F233BE992Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-F233BE992Z', 'auto');
+    </script>
 </head>
 
 <body>
@@ -27,8 +45,8 @@
                     <li class="nav-item mr-3"><a class="nav-link" href="../index.html">HOME</a></li>
                     <li class="nav-item active mr-3"><a class="nav-link" href="./blogs.html">BLOGS</a></li>
                     <li class="nav-item mr-3"><a class="nav-link" href="../about-us/about-us.html">ABOUT US</a></li>
-                    <li class="nav-item mr-3"><a class="nav-link" href="../join-us/be-part-of-us.html">BE PART OF US</a></li>
-                    <li class="nav-item mr-3"><a class="nav-link" href="../contact-us/contact-us.html">CONTACT US</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="../contact-us/contact-us.html">CONTACT US</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,7 +55,7 @@
     <div class="container-fluid px-0 text-center mb-5">
         <div class="row mx-0">
             <div class="col-12 px-0">
-            <img src="./assets/images/banner.png" class="img-fluid w-100">
+                <img src="./assets/images/banner.png" class="img-fluid w-100">
             </div>
         </div>
         <div class="row mx-0 mt-2">
@@ -50,11 +68,12 @@
                 <div class="card" style="width: 58rem;">
                     <img src="./this.jpg" class="card-img-top" alt="this">
                     <div class="card-body">
-                      <h5 class="card-title">November Month's Issue</h5>
-                      <p class="card-text">In this issue of Dentico's Digest we are going to cover this and that ........</p>
-                      <a href="#" class="btn btn-primary">Read more</a>
+                        <h5 class="card-title">November Month's Issue</h5>
+                        <p class="card-text">In this issue of Dentico's Digest we are going to cover this and that
+                            ........</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -70,6 +89,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
 </body>
 
 </html>
